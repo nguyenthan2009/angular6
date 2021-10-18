@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./caculator.component.scss']
 })
 export class CaculatorComponent implements OnInit {
+  pheptinh: any;
   value =1 ;
 
   constructor() { }
@@ -13,9 +14,17 @@ export class CaculatorComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  caculator( number1: any,number2: any,pheptinh: any){
-      this.value = eval(number1 + pheptinh + number2) ;
-
+  caculator1( number1: any,number2: any){
+      this.value = number1+number2
+  }
+  caculator2( number1: any,number2: any){
+    this.value = number1 -number2
+  }
+  caculator3( number1: any,number2: any){
+    this.value = number1*number2
+  }
+  caculator4( number1: any,number2: any){
+    this.value = number1/number2
   }
 
 }

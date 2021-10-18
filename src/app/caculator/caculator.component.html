@@ -3,11 +3,10 @@
 <h1>số thứ hai</h1>
 <input #element2 type="number"/>
 <h1>Phép tính</h1>
-<input #element3 type="submit"  value="+"/>
-<input #element3  type="submit" value="-"/>
-<input #element3   type="submit" value="*"/>
-<input #element3   type="submit" value="/"/>
-<button type="submit" (click)="caculator(element1.value,element2.value,element3.value)">=</button>
+<button type="submit" (click)="caculator1(element1.value,element2.value)">+</button>
+<button type="submit" (click)="caculator2(element1.value,element2.value)">-</button>
+<button type="submit" (click)="caculator3(element1.value,element2.value)">*</button>
+<button type="submit" (click)="caculator4(element1.value,element2.value)">/</button>
 <p>Kết quả :{{value}}</p>
 
 
